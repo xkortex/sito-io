@@ -1,12 +1,5 @@
-from abc import ABC
-from enum import Enum
-from pathlib import Path
-from urllib.parse import ParseResult
-from urllib import request
-from collections.abc import Mapping, MutableSet, MutableMapping
-from typing import Dict, List, Optional, Tuple, Union
-from pydantic import BaseModel, FilePath, DirectoryPath, AnyUrl
-from .fileio import Manifest, ManifestMap, ManifestStoreKind, ResourceKind
+from collections.abc import MutableMapping
+from .fileio import ManifestMap
 
 
 class MutableManifestTree(MutableMapping):
